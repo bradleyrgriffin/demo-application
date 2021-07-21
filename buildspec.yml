@@ -6,6 +6,9 @@ phases:
       - echo Build started on `date`
       - zip -r build.zip src
       - echo Zipped
+  post_build:
+    commands:
+      - ls
 artifacts:
   files:
     - build.zip
