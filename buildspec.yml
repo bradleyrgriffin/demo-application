@@ -1,14 +1,11 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      java: corretto11
-    build:
-      commands:
-        - echo Build started on `date`
-        - zip -r /target/build.zip src
-        - echo Zipped
+  build:
+    commands:
+      - echo Build started on `date`
+      - zip -r build.zip src
+      - echo Zipped
 artifacts:
   files:
-    - /target/build.zip
+    - build.zip
