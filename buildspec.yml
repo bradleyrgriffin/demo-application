@@ -11,4 +11,4 @@ phases:
         - echo Zipped
 artifacts:
   files:
-    - build.zip
+    - /target/build.zip
